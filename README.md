@@ -4,7 +4,7 @@
 **Group:** SE3  
 
 ## Overview
-This repository contains the implementation and reports for the first four labs of the Cloud and Mobile Computing course.
+This repository contains the implementation and reports for the four labs of the Cloud and Mobile Computing course.
 
 ---
 
