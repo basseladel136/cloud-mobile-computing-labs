@@ -4,12 +4,12 @@
 **Group:** SE3  
 
 ## Overview
-This repository contains the implementation and reports for the four labs of the Cloud and Mobile Computing course.
+This repository contains the implementation and reports for the Cloud and Mobile Computing course labs.
 
 ---
 
 ## Lab 1 — Cloud Virtualization & Data Center Architecture
-- Docker container resource usage (namespaces, cgroups)
+- Multipass VM vs Docker container resource comparison (namespaces, cgroups)
 - AWS EC2 instance exploration (Nitro hypervisor)
 - Tail latency simulation with Flask + latency histogram
 
@@ -27,3 +27,11 @@ This repository contains the implementation and reports for the four labs of the
 - product-service and order-service built with Flask
 - Docker Compose orchestration with health checks
 - Failure injection and resilience observation (503 handling)
+
+## Lab 5 — Local Serverless & Event-Driven Image Pipeline
+- Event-driven pipeline using Docker, Redis Streams, Python Flask, and Pillow
+- 5 containerized services: Redis, event-source, event-router, image-resizer, notifier
+- Folder watcher publishes image.uploaded events to Redis Stream
+- Event router implements fan-out to multiple function destinations
+- Cold start experiment comparing warm vs restarted container response times
+- No cloud account required — fully local simulation of serverless architecture
